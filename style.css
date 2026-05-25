@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'TTlakes';
+    src: url(fonts/TTLakes-Bold.ttf);
+    font-weight: 700;
+    font-style: bold;
+}
+@font-face {
+    font-family: 'TTlakes';
+    src: url(fonts/TTLakes-Regular.ttf);
+    font-weight: 400;
+    font-style: regular;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    width: 320px;
+}
+
+.repair-h1 {
+    margin-top: 16px;
+    color: #7E7E82;
+    font-family: 'TTlakes';
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.swiper {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    background-color: #F8F8F8;
+}
+
+.swiper-slide {
+    display: flex;
+} 
+
+.swiper-pagination-bullet {
+    background: #DDDDDD;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active{
+    background: #B5B6BC;
+}
