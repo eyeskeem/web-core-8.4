@@ -6,6 +6,12 @@
 }
 @font-face {
     font-family: 'TTlakes';
+    src: url(fonts/TTLakes-DemiBold.ttf);
+    font-weight: 500;
+    font-style: semibold;
+}
+@font-face {
+    font-family: 'TTlakes';
     src: url(fonts/TTLakes-Regular.ttf);
     font-weight: 400;
     font-style: regular;
@@ -16,16 +22,15 @@
     margin: 0;
 }
 
-.mobile {
+.cards {
     overflow-y: auto;
-    width: 768px;
     width: 100%;
+    max-width: 320px;
     height: auto;
 }
 
 .blue-line {
     display: flex;
-    width: 768px;
     width: 100%;
 }
 
@@ -40,6 +45,8 @@
 }
 
 .swiper {
+    width: 100%;
+    max-width: 320px;
     margin-top: 16px;
     padding-top: 20px;
     padding-bottom: 70px;
@@ -60,8 +67,8 @@
     align-items: center;
     gap: 4px;
     padding-bottom: 30px;
-    width: 768px;
-    width: 100%;
+    width: 320px;
+    max-width: 100%;
 }
 .swiper-pagination-bullet {
     width: 12px;
@@ -73,54 +80,148 @@
     background: #B5B6BC;
 }
 
-.tablet {
+.show-more {
     display: none;
 }
 
-@media (min-width: 768px) and (max-width: 1120px){
-    
-    .mobile {
+@media (min-width: 321px) and (max-width: 768px){
+
+    .swiper-pagination {
         display: none;
     }
 
-    .tablet {
-        display: block;
-    }
-
-    .tablet-h1 {
+    .repair-h1 {
     display: flex;
-    margin-top: 15px;
+    margin-top: 16px;
     margin-left: 24px;
     color: #7E7E82;
     font-family: 'TTlakes';
     font-size: 16px;
     font-weight: 400;
-    }
-
-    .tablet-open {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        margin-top: 15px;
-        padding: 25px 0 60px 0;
-        gap: 10px;
-        background-color: #F8F8F8;
-    }
-
-    .tablet-close {
-        display: none;
-    }
-
-    .button {
-        height: 72px;
-        width: 224px;
-        margin-left: 24px;
-    }
 }
 
-@media (min-width: 1121px) and (max-width: 2000px) {
+    .cards {
+        max-width: 768px;
+    }
+    .swiper {
+        max-width: 768px;
+        padding: 24px;
+    }
+    .swiper-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px 24px;
+    }
 
-    .mobile {
+
+    .swiper-slide {
+        width: 224px;
+        height: 72px;
+        margin-left: 0;
+    }
+    .swiper-slide img {
+        width: 100%;
+    }
+
+
+    .show-more {
+        margin-top: 24px;
+        border: none;
+        background: transparent;
+        font-family: 'TTlakes';
+        font-size: 16px;
+        font-weight: 500;
+        color: #1B1C21;
+        cursor: pointer;
+    }
+
+
+    .show-more {
+        display: flex;
+        align-items: center;
+    }
+    }
+    .logo {
+        display: none;
+    }
+    .logo.show {
+        display: flex;
+    }
+    .show-more__icon {
+    transition: transform 0.3s ease;
+    }
+    .show-more.open .show-more__icon {
+    transform: rotate(180deg);
+    }
+
+
+@media (min-width: 769px) and (max-width: 1120px) {
+
+    .swiper-pagination {
         display: none;
     }
 
+    .repair-h1 {
+    display: flex;
+    margin-top: 16px;
+    margin-left: 24px;
+    color: #7E7E82;
+    font-family: 'TTlakes';
+    font-size: 16px;
+    font-weight: 400;
+}
+
+    .cards {
+        max-width: 768px;
+    }
+    .swiper {
+        max-width: 768px;
+        padding: 24px;
+    }
+    .swiper-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px 24px;
+    }
+
+
+    .swiper-slide {
+        width: 224px;
+        height: 72px;
+        margin-left: 0;
+    }
+    .swiper-slide img {
+        width: 100%;
+    }
+
+
+    .show-more {
+        margin-top: 24px;
+        border: none;
+        background: transparent;
+        font-family: 'TTlakes';
+        font-size: 16px;
+        font-weight: 500;
+        color: #1B1C21;
+        cursor: pointer;
+    }
+
+
+    .show-more {
+        display: flex;
+        align-items: center;
+    }
+    }
+    .logo {
+        display: none;
+    }
+    .logo.show {
+        display: flex;
+    }
+    .show-more__icon {
+    transition: transform 0.3s ease;
+    }
+    .show-more.open .show-more__icon {
+    transform: rotate(180deg);
+    }
 }
