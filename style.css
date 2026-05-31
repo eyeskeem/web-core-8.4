@@ -98,7 +98,7 @@
     font-family: 'TTlakes';
     font-size: 16px;
     font-weight: 400;
-}
+    }
 
     .cards {
         max-width: 768px;
@@ -140,11 +140,11 @@
         display: flex;
         align-items: center;
     }
-    }
-    .logo {
+
+    .hidden {
         display: none;
     }
-    .logo.show {
+    .hidden.show {
         display: flex;
     }
     .show-more__icon {
@@ -153,6 +153,7 @@
     .show-more.open .show-more__icon {
     transform: rotate(180deg);
     }
+}
 
 
 @media (min-width: 769px) and (max-width: 1120px) {
@@ -164,7 +165,7 @@
     .repair-h1 {
     display: flex;
     margin-top: 16px;
-    margin-left: 24px;
+    margin-left: 32px;
     color: #7E7E82;
     font-family: 'TTlakes';
     font-size: 16px;
@@ -172,21 +173,21 @@
 }
 
     .cards {
-        max-width: 768px;
+        max-width: 1120px;
     }
     .swiper {
-        max-width: 768px;
-        padding: 24px;
+        max-width: 1120px;
+        padding: 32px;
     }
     .swiper-wrapper {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 16px 24px;
+        grid-template-columns: repeat(4, 240px);
+        gap: 16px 32px;
     }
 
 
     .swiper-slide {
-        width: 224px;
+        width: 240px;
         height: 72px;
         margin-left: 0;
     }
@@ -211,11 +212,10 @@
         display: flex;
         align-items: center;
     }
-    }
-    .logo {
+    .hidden_pc {
         display: none;
     }
-    .logo.show {
+    .hidden_pc.show {
         display: flex;
     }
     .show-more__icon {

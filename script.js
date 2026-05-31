@@ -23,7 +23,7 @@ window.addEventListener("resize", initSwiper);
 
 const showMoreBtn = document.querySelector('.show-more');
 const showMoreText = document.querySelector('.show-more span');
-const logos = document.querySelectorAll('.logo');
+const logos = document.querySelectorAll('.hidden');
 
 showMoreBtn.addEventListener('click', () => {
     logos.forEach(item => {
