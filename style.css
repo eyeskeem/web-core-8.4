@@ -26,7 +26,6 @@
     overflow-y: auto;
     width: 100%;
     max-width: 320px;
-    height: auto;
 }
 
 .blue-line {
@@ -83,6 +82,12 @@
 .show-more {
     display: none;
 }
+
+.hidden_pc {
+    display: none;
+}
+
+
 
 @media (min-width: 321px) and (max-width: 768px){
 
@@ -141,6 +146,9 @@
         align-items: center;
     }
 
+    .hidden_pc {
+        display: none !important;
+    }
     .hidden {
         display: none;
     }
@@ -156,7 +164,8 @@
 }
 
 
-@media (min-width: 769px) and (max-width: 1120px) {
+
+@media (min-width: 769px) {
 
     .swiper-pagination {
         display: none;
